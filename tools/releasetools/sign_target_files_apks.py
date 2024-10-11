@@ -270,8 +270,11 @@ def IsOtaPackage(fp):
 
 
 def IsEntryOtaPackage(input_zip, filename):
-  with input_zip.open(filename, "r") as fp:
-    return IsOtaPackage(fp)
+    try:
+        with input_zip.open(filename, "r") as fp:
+            return IsOtaPackage(fp)
+    except zipfile.BadZipFile:
+        return False
 
 
 def GetApexFilename(filename):
