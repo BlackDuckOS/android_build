@@ -104,3 +104,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     adb_debug.prop \
     userdebug_plat_sepolicy.cil
+
+$(call inherit-product, vendor/blackduck/vendor.mk)
