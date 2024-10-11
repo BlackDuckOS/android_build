@@ -105,6 +105,7 @@ PRODUCT_PACKAGES += \
     fsck_msdos \
     fsverity-release-cert-der \
     fsverity-base-cert-der \
+    fsverity-blackduck-cert-der \
     fs_config_files_system \
     fs_config_dirs_system \
     gpu_counter_producer \
